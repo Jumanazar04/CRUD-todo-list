@@ -1,0 +1,19 @@
+header {
+    text-align: center;
+}
+
+.list-group-item {
+    
+    text-decoration: none;
+}
+
+
+
+.edit-btn, .delete-btn {
+    background: transparent;
+    border: none;
+}
+
+img:hover {
+    cursor: pointer;
+}

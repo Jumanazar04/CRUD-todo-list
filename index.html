@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD todo list</title>
+    <link rel="stylesheet" href="./bootsrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <header>
+        <h2 id="full-day"></h2>
+        <div class="time-container">
+            <span id="hour">Hh</span>
+            :
+            <span id="minute">Mm</span>
+            :
+            <span id="second">Ss</span>
+        </div>
+        <h1 class="display-2 text-primary">Todo list</h1>
+        <small class="mb-5">
+            by 
+            <a href="https://github.com/Jumanazar04" target="_blank">Jdeliver</a>
+        </small>
+    </header>
+    <main class="container mt-3">
+        <form class="mb-3" id="form-create">
+            <div class="mb-3">
+                <input 
+                type="text"  
+                id="input-create" 
+                class="mb-1 form-control"
+                placeholder="Type todo..."
+                autocomplete="off">
+                <span id="massage-create" class="text-danger"></span>
+            </div>
+            <button class="btn btn-outline-primary d-block ms-auto">Add</button>
+        </form>
+
+        <ul id="list-group-todo" class="list-group">
+            
+        </ul>
+
+        <div id="modal" class=" modal-todo hidden">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-item-center">
+                    <h5>Change this todo</h5>
+                </div>
+                <div class="card-body">
+                    <form id="form-edit" class="mb-3">
+                        <div class="mb-3">
+                            <input 
+                                type="text"  
+                                id="input-edit" 
+                                class="mb-1 form-control"
+                                placeholder="Type todo..."
+                                autocomplete="off"
+                            >
+                            <span id="massage-edit" class="text-danger"></span>
+                        </div>
+                        <button class="btn btn-outline-success d-block ms-auto">
+                            Save changes
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+                   
+
+    <div id="overlay" class="overlay hidden"></div>
+
+
+
+    <script src="./bootsrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
